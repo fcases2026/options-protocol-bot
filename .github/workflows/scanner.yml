@@ -1,4 +1,4 @@
-STREAMING_CHUNK:Configuring GitHub Actions triggersname: Options Protocol Scanneron:Run automatically on a schedule (Cron syntax)This example runs at minute 0 past every hour from 13 through 20 on Monday to Friday.Adjust this to match your preferred market hours (in UTC)schedule:- cron: '0 13-20 * * 1-5'Allow manual triggering from the GitHub Actions tabworkflow_dispatch:STREAMING_CHUNK:Defining the execution jobjobs:scan-market:runs-on: ubuntu-lateststeps:
+Options Protocol Scanneron:Run automatically on a schedule (Cron syntax)This example runs at minute 0 past every hour from 13 through 20 on Monday to Friday.Adjust this to match your preferred market hours (in UTC)schedule:- cron: '0 13-20 * * 1-5'Allow manual triggering from the GitHub Actions tabworkflow_dispatch:STREAMING_CHUNK:Defining the execution jobjobs:scan-market:runs-on: ubuntu-lateststeps:
   # Step 1: Check out your repository code
   - name: Checkout repository
     uses: actions/checkout@v3

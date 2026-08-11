@@ -9,10 +9,7 @@ WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 # Define your Staging Area Watchlist here
 # Format: {"ticker": "TARGET_PRICE"}
 WATCHLIST = {
-    "SOFI": 15.00,
-    "AAPL": 175.50,
-    "SPY": 505.00,
-    "QQQ": 420.00
+    "SOAR": 3.00
 }
 
 # The threshold percentage (1.5% in the dashboard)
